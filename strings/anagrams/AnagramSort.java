@@ -12,7 +12,9 @@ public class AnagramSort {
     public static void main(String[] args) {
         String[] words = {"adam", "dog", "tree", "god", "mada", "beer", "red", 
                           "der"};
-        anagramSort(Arrays.asList(words));
+        List<String> sortedList = anagramSort(Arrays.asList(words));
+        for (String word : sortedList)
+            System.out.println(word);
     }
 
 
